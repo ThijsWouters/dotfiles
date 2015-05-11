@@ -1,0 +1,9 @@
+[core]
+	excludesfile = /home/thijs/.gitignore_global
+	editor = vim
+	autocrlf = false
+[help]
+	autocorrect = 1
+[user]
+	name = Thijs Wouters
+	email = thijs@morewood.be
