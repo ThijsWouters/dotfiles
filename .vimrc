@@ -5,7 +5,6 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
-Plugin 'tomasr/molokai'
 Plugin 'scrooloose/nerdtree'
 
 call vundle#end()
@@ -70,5 +69,7 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-colorscheme molokai
+colorscheme SolarizedDark
+
+autocmd vimenter * NERDTree
 
