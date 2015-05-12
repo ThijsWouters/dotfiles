@@ -7,3 +7,7 @@
 [user]
 	name = Thijs Wouters
 	email = thijs@morewood.be
+[merge]
+	tool = vimdiff
+	conflictstyle = diff3
+	prompt = false
