@@ -13,6 +13,7 @@ Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 Plugin 'rstacruz/sparkup'
+Plugin 'altercation/vim-colors-solarized'
 
 call vundle#end()
 
