@@ -15,6 +15,7 @@ Plugin 'honza/vim-snippets'
 Plugin 'rstacruz/sparkup'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
 
 call vundle#end()
 
