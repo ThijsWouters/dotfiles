@@ -18,6 +18,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
 Plugin 'jpalardy/vim-slime'
 Plugin 'ethanmuller/scratch.vim'
+Plugin 'tpope/vim-fugitive'
 
 call vundle#end()
 
