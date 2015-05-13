@@ -21,6 +21,11 @@ filetype plugin indent on
 
 syntax enable
 
+set t_Co=256
+let g:solarized_termcolors=256
+set background=dark
+colorscheme solarized
+
 set modelines=0
 
 set tabstop=2
@@ -76,9 +81,6 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
-
-set background=dark
-colorscheme solarized
 
 "NERDTree
 autocmd StdinReadPre * let s:std_in=1
