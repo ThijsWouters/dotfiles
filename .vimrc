@@ -90,3 +90,5 @@ nnoremap <C-n> :NERDTreeToggle<CR>
 xnoremap <C-p> d"0P
 nnoremap <C-p> diw"0P
 
+inoremap jj <esc>
+
