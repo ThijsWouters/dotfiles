@@ -16,6 +16,7 @@ Plugin 'rstacruz/sparkup'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
+Plugin 'jpalardy/vim-slime'
 
 call vundle#end()
 
