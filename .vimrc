@@ -17,6 +17,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
 Plugin 'jpalardy/vim-slime'
+Plugin 'ethanmuller/scratch.vim'
 
 call vundle#end()
 
@@ -85,13 +86,16 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+xnoremap <C-p> d"0P
+nnoremap <C-p> diw"0P
+
+inoremap jj <esc>
+
 "NERDTree
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 nnoremap <C-n> :NERDTreeToggle<CR>
 
-xnoremap <C-p> d"0P
-nnoremap <C-p> diw"0P
-
-inoremap jj <esc>
+"Scratch
+nnoremap <leader><tab> :Vscratch<CR>
 
