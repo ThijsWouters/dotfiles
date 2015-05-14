@@ -19,6 +19,7 @@ Plugin 'tpope/vim-repeat'
 Plugin 'jpalardy/vim-slime'
 Plugin 'ethanmuller/scratch.vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'bling/vim-airline'
 
 call vundle#end()
 
@@ -99,4 +100,6 @@ nnoremap <C-n> :NERDTreeToggle<CR>
 
 "Scratch
 nnoremap <leader><tab> :Vscratch<CR>
+
+let g:airline_powerline_fonts = 1
 
