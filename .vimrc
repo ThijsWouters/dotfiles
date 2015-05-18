@@ -101,5 +101,6 @@ nnoremap <C-n> :NERDTreeToggle<CR>
 "Scratch
 nnoremap <leader><tab> :Vscratch<CR>
 
+"Airline
 let g:airline_powerline_fonts = 1
 
