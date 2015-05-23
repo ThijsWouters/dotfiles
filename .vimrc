@@ -20,6 +20,7 @@ Plugin 'jpalardy/vim-slime'
 Plugin 'ethanmuller/scratch.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'bling/vim-airline'
+Plugin 'kien/ctrlp.vim'
 
 call vundle#end()
 
@@ -88,10 +89,13 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-xnoremap <C-p> d"0P
-nnoremap <C-p> diw"0P
+xnoremap <leader>p d"0P
+nnoremap <leader>p diw"0P
 
 inoremap jj <esc>
+
+nnoremap <C-t> :!rake test<CR>
+inoremap <C-t> :!rake test<CR>
 
 "NERDTree
 autocmd StdinReadPre * let s:std_in=1
