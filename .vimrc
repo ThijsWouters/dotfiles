@@ -21,6 +21,8 @@ Plugin 'ethanmuller/scratch.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'bling/vim-airline'
 Plugin 'kien/ctrlp.vim'
+Plugin 'tpope/vim-rake'
+Plugin 'tpope/vim-projectionist'
 
 call vundle#end()
 
@@ -94,9 +96,6 @@ nnoremap <leader>p diw"0P
 
 inoremap jj <esc>
 
-nnoremap <C-t> :!rake test<CR>
-inoremap <C-t> :!rake test<CR>
-
 "NERDTree
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
@@ -107,4 +106,8 @@ nnoremap <leader><tab> :Vscratch<CR>
 
 "Airline
 let g:airline_powerline_fonts = 1
+
+"Rake
+nnoremap <C-t> :silent Rake test<CR>:redraw!<CR>
+inoremap <C-t> :silent Rake test<CR>:redraw!<CR>
 
