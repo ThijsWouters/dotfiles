@@ -23,6 +23,7 @@ Plugin 'bling/vim-airline'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-rake'
 Plugin 'tpope/vim-projectionist'
+Plugin 'scrooloose/syntastic'
 
 call vundle#end()
 
@@ -108,6 +109,6 @@ nnoremap <leader><tab> :Vscratch<CR>
 let g:airline_powerline_fonts = 1
 
 "Rake
-nnoremap <C-t> :silent Rake test<CR>:redraw!<CR>
-inoremap <C-t> :silent Rake test<CR>:redraw!<CR>
+nnoremap <C-t> :wa<CR>:silent Rake test<CR>:redraw!<CR>
+inoremap <C-t> <ESC>:wa<CR>:silent Rake test<CR>:redraw!<CR>i
 
