@@ -1,60 +1,60 @@
 [submodule ".vim/bundle/Vundle.vim"]
 	path = .vim/bundle/Vundle.vim
-	url = git@github.com:gmarik/Vundle.vim
+	url = https://github.com/gmarik/Vundle.vim
 [submodule ".vim/bundle/ack.vim"]
 	path = .vim/bundle/ack.vim
-	url = git@github.com:mileszs/ack.vim
+	url = https://github.com/mileszs/ack.vim
 [submodule ".vim/bundle/ctrlp.vim"]
 	path = .vim/bundle/ctrlp.vim
-	url = git@github.com:kien/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim
 [submodule ".vim/bundle/nerdcommenter"]
 	path = .vim/bundle/nerdcommenter
-	url = git@github.com:scrooloose/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter
 [submodule ".vim/bundle/nerdtree"]
 	path = .vim/bundle/nerdtree
-	url = git@github.com:scrooloose/nerdtree
+	url = https://github.com/scrooloose/nerdtree
 [submodule ".vim/bundle/scratch.vim"]
 	path = .vim/bundle/scratch.vim
-	url = git@github.com:ethanmuller/scratch.vim
+	url = https://github.com/ethanmuller/scratch.vim
 [submodule ".vim/bundle/sparkup"]
 	path = .vim/bundle/sparkup
-	url = git@github.com:rstacruz/sparkup
+	url = https://github.com/rstacruz/sparkup
 [submodule ".vim/bundle/syntastic"]
 	path = .vim/bundle/syntastic
-	url = git@github.com:scrooloose/syntastic
+	url = https://github.com/scrooloose/syntastic
 [submodule ".vim/bundle/tlib_vim"]
 	path = .vim/bundle/tlib_vim
-	url = git@github.com:tomtom/tlib_vim
+	url = https://github.com/tomtom/tlib_vim
 [submodule ".vim/bundle/vim-addon-mw-utils"]
 	path = .vim/bundle/vim-addon-mw-utils
-	url = git@github.com:MarcWeber/vim-addon-mw-utils
+	url = https://github.com/MarcWeber/vim-addon-mw-utils
 [submodule ".vim/bundle/vim-airline"]
 	path = .vim/bundle/vim-airline
-	url = git@github.com:bling/vim-airline
+	url = https://github.com/bling/vim-airline
 [submodule ".vim/bundle/vim-colors-solarized"]
 	path = .vim/bundle/vim-colors-solarized
-	url = git@github.com:altercation/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized
 [submodule ".vim/bundle/vim-fugitive"]
 	path = .vim/bundle/vim-fugitive
-	url = git@github.com:tpope/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
 [submodule ".vim/bundle/vim-projectionist"]
 	path = .vim/bundle/vim-projectionist
-	url = git@github.com:tpope/vim-projectionist
+	url = https://github.com/tpope/vim-projectionist
 [submodule ".vim/bundle/vim-rake"]
 	path = .vim/bundle/vim-rake
-	url = git@github.com:tpope/vim-rake
+	url = https://github.com/tpope/vim-rake
 [submodule ".vim/bundle/vim-repeat"]
 	path = .vim/bundle/vim-repeat
-	url = git@github.com:tpope/vim-repeat
+	url = https://github.com/tpope/vim-repeat
 [submodule ".vim/bundle/vim-slime"]
 	path = .vim/bundle/vim-slime
-	url = git@github.com:jpalardy/vim-slime
+	url = https://github.com/jpalardy/vim-slime
 [submodule ".vim/bundle/vim-snipmate"]
 	path = .vim/bundle/vim-snipmate
-	url = git@github.com:garbas/vim-snipmate
+	url = https://github.com/garbas/vim-snipmate
 [submodule ".vim/bundle/vim-snippets"]
 	path = .vim/bundle/vim-snippets
-	url = git@github.com:honza/vim-snippets
+	url = https://github.com/honza/vim-snippets
 [submodule ".vim/bundle/vim-surround"]
 	path = .vim/bundle/vim-surround
-	url = git@github.com:tpope/vim-surround
+	url = https://github.com/tpope/vim-surround
