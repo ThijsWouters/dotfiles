@@ -78,3 +78,6 @@
 	path = .vim/bundle/ri.vim
 	url = https://github.com/danchoi/ri.vim.git
   ignore = untracked
+[submodule ".vim/bundle/vim-userstories"]
+	path = .vim/bundle/vim-userstories
+	url = https://github.com/pk/vim-userstories.git
