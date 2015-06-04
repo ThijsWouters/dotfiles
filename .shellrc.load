@@ -21,7 +21,7 @@ PROMPT_COMMAND='__git_ps1 "\[\033[1;32m\]\w\n$(~/.rvm/bin/rvm-prompt)" "\[\033[1
 #########
 alias ls="ls --color"
 alias ll="ls -al"
-alias tw="t -d .work-todo/config"
+alias tw="t -d ~/.work-todo/config"
 
 setxkbmap -layout be -option ctrl:nocaps
 
