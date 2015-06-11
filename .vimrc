@@ -85,3 +85,7 @@ let g:airline_powerline_fonts = 1
 nnoremap <C-t> :wa<CR>:silent Rake test<CR>:redraw!<CR>
 inoremap <C-t> <ESC>:wa<CR>:silent Rake test<CR>:redraw!<CR>i
 
+"Automatically save manual folding
+autocmd BufWinLeave *.* mkview
+autocmd BufWinEnter *.* silent loadview
+
