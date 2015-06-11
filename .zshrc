@@ -9,6 +9,9 @@ export ZSH_CUSTOM=$HOME/.oh-my-zsh-custom
 DEFAULT_USER="thijs"
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir rvm vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(longstatus time)
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -80,5 +83,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 . $HOME/.shellrc.load
