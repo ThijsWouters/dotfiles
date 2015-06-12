@@ -40,8 +40,6 @@ set incsearch
 set showmatch
 set hlsearch
 nnoremap <leader><space> :noh<cr>
-nnoremap <tab> %
-vnoremap <tab> %
 
 set wrap
 set textwidth=79
@@ -59,7 +57,7 @@ inoremap <right> <nop>
 nnoremap j gj
 nnoremap k gk
 
-nnoremap <leader>w <C-w>v<C-w>l
+nnoremap <leader>w <C-w>s<C-w>j
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
@@ -84,8 +82,4 @@ let g:airline_powerline_fonts = 1
 "Rake
 nnoremap <C-t> :wa<CR>:silent Rake test<CR>:redraw!<CR>
 inoremap <C-t> <ESC>:wa<CR>:silent Rake test<CR>:redraw!<CR>i
-
-"Automatically save manual folding
-autocmd BufWinLeave *.* mkview
-autocmd BufWinEnter *.* silent loadview
 
