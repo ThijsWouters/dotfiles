@@ -9,7 +9,8 @@ let g:solarized_termcolors=256
 set background=dark
 colorscheme solarized
 
-set modelines=0
+set modeline
+set modelines=5
 
 set tabstop=2
 set shiftwidth=2
@@ -82,4 +83,7 @@ let g:airline_powerline_fonts = 1
 "Rake
 nnoremap <C-t> :wa<CR>:silent Rake test<CR>:redraw!<CR>
 inoremap <C-t> <ESC>:wa<CR>:silent Rake test<CR>:redraw!<CR>i
+
+"CtrlP
+set wildignore+=*/target/*
 
