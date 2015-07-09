@@ -8,3 +8,4 @@
     rvm1_install_path: '/home/{{ ansible_user_id }}/.rvm'
     rvm1_user: '{{ ansible_user_id }}'
   - role: alban.andrieu.dropbox
+  - role: ThePixelDeveloper.google-chrome
