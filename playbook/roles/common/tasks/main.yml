@@ -5,3 +5,6 @@
 - name: Install curl
   apt: name=curl state=present
   sudo: yes
+- name: Install zsh
+  apt: name=zsh state=present
+  sudo: yes
