@@ -8,3 +8,6 @@
 - name: Install zsh
   apt: name=zsh state=present
   sudo: yes
+- name: Install keepassx
+  apt: name=keepassx state=present
+  sudo: yes
