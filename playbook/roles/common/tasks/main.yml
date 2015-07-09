@@ -2,3 +2,6 @@
 - name: Install vim
   apt: name=vim state=present
   sudo: yes
+- name: Install curl
+  apt: name=curl state=present
+  sudo: yes

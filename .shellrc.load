@@ -7,6 +7,8 @@ export PATH=$PATH:$HOME/bin
 
 ####
 # put any bash/zsh customizations in here
+#
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 ##########
 # PROMPT #

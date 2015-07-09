@@ -3,4 +3,8 @@
   connection: local
   roles:
   - role: common
-    
+  - role: rvm_io.rvm1-ruby
+    rvm1_install_flags: '--auto-dotfiles --user-install'
+    rvm1_install_path: '/home/{{ ansible_user_id }}/.rvm'
+    rvm1_user: '{{ ansible_user_id }}'
+
