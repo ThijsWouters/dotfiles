@@ -9,3 +9,7 @@
     rvm1_user: '{{ ansible_user_id }}'
   - role: alban.andrieu.dropbox
   - role: ThePixelDeveloper.google-chrome
+  - role: smola.java
+    sudo: yes
+    java_packages:
+      - oracle-java7-installer
