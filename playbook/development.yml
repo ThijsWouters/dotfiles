@@ -13,3 +13,5 @@
     sudo: yes
     java_packages:
       - oracle-java7-installer
+  - role: intellij
+    sudo: yes

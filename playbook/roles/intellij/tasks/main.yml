@@ -1,0 +1,5 @@
+---
+- name: Download Intellij
+  get_url: url=https://download.jetbrains.com/idea/ideaIU-14.1.4.tar.gz dest=/tmp/ideaIU-14.1.4.tar.gz validate_certs=no
+- name: Install Intellij
+  unarchive: dest=/opt creates=/opt/idea src=/tmp/ideaIU-14.1.4.tar.gz
