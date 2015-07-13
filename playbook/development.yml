@@ -13,3 +13,24 @@
     sudo: yes
     java_packages:
       - oracle-java7-installer
+  - role: ANXS.postgresql
+    sudo: yes
+    postgresql_version: 9.4
+    postgresql_databases:
+      - name: tradelec
+        uuid_ossp: yes
+      - name: test
+        uuid_ossp: yes
+    postgresql_users:
+      - name: intouchbase
+        pass: intouchbase
+        encrypted: no
+    postgresql_user_privileges:
+      - name: intouchbase
+        db: tradelec
+        priv: "ALL"
+        role_attr_flags: "SUPERUSER"
+      - name: intouchbase
+        db: test
+        priv: "ALL"
+        role_attr_flags: "SUPERUSER"
