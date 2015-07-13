@@ -11,3 +11,9 @@
 - name: Install keepassx
   apt: name=keepassx state=present
   sudo: yes
+- name: Install xclip
+  apt: name=xclip state=present
+  sudo: yes
+- name: Install maven
+  apt: name=maven state=present
+  sudo: yes
