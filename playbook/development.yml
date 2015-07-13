@@ -15,3 +15,8 @@
       - oracle-java7-installer
   - role: intellij
     sudo: yes
+  - role: ANXS.postgresql
+    sudo: yes
+    postgresql_version: 9.1
+    postgresql_locale: 'nl_BE.UTF-8'
+    postgresql_apt_repository: 'deb http://apt.postgresql.org/pub/repos/apt/ utopic-pgdg main'
