@@ -54,7 +54,6 @@ plugins=(git)
 
 # User configuration
 
-export PATH="/home/thijs/.rvm/gems/ruby-2.2.0/bin:/home/thijs/.rvm/gems/ruby-2.2.0@global/bin:/home/thijs/.rvm/rubies/ruby-2.2.0/bin:/home/thijs/bin:/usr/bin:/home/thijs/Android/Sdk/tools:/home/thijs/Android/Sdk/platform-tools:/home/thijs/Android/Sdk:/opt/android-ndk:/opt/cocos2d-js-v3.3/tools/cocos2d-console/bin:/usr/local/heroku/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/opt/gradle/bin:/home/thijs/.rvm/bin:/home/thijs/bin:/home/thijs/.rvm/bin:/home/thijs/.rvm/bin:/home/thijs/.rvm/bin:/home/thijs/.rvm/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
