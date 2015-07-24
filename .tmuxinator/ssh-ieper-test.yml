@@ -4,7 +4,7 @@ name: ssh-ieper-test
 root: ~/
 
 windows:
-  - Hasselt_server:
+  - Ieper-test_server:
       layout: af4d,205x51,0,0{130x51,0,0,27,74x51,131,0[74x25,131,0,28,74x25,131,26,29]}
       panes:
         - ssh ieper-test
