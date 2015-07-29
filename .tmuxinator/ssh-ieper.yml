@@ -1,0 +1,12 @@
+# ~/.tmuxinator/ssh-ieper.yml
+
+name: ssh-ieper
+root: ~/
+
+windows:
+  - Ieper_server:
+      layout: af4d,205x51,0,0{130x51,0,0,27,74x51,131,0[74x25,131,0,28,74x25,131,26,29]}
+      panes:
+        - ssh ieper
+        - ssh ieper 'tail -f /usr/local/jbossas7/standalone/log/server.log'
+        - ssh -t ieper 'top'
