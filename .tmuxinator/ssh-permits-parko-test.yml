@@ -1,0 +1,12 @@
+# ~/.tmuxinator/ssh-permits-parko-test.yml
+
+name: ssh-permits-parko-test
+root: ~/
+
+windows:
+  - Ieper-test_server:
+      layout: af4d,205x51,0,0{130x51,0,0,27,74x51,131,0[74x25,131,0,28,74x25,131,26,29]}
+      panes:
+        - ssh permits-parko-test
+        - ssh permits-parko-test 'tail -f /usr/local/jbossas7/standalone/log/server.log'
+        - ssh -t permits-parko-test 'top'
