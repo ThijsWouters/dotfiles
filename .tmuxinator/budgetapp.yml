@@ -10,7 +10,7 @@ root: ~/projects/budget-management
 # pre: sudo /etc/rc.d/mysqld start
 
 # Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
-# pre_window: rbenv shell 2.0.0-p247
+pre_window: cd .
 
 # Pass command line options to tmux. Useful for specifying a different tmux.conf.
 # tmux_options: -f ~/.tmux.mac.conf
@@ -34,7 +34,8 @@ windows:
         - vim
         - bundle exec guard
   - todo:
-      layout: 6ab0,213x52,0,0{122x52,0,0,1,90x52,123,0,3}
+      layout: f157,213x52,0,0{140x52,0,0,12,72x52,141,0,15}
       panes:
+        - vim analysis/backlog.userstories
         - t ls
-        - ruby app.rb
+  - server: ruby app.rb
