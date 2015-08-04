@@ -1,0 +1,12 @@
+# ~/.tmuxinator/ssh-hasselt-test.yml
+
+name: ssh-hasselt-test
+root: ~/
+
+windows:
+  - Hasselt-test_server:
+      layout: af4d,205x51,0,0{130x51,0,0,27,74x51,131,0[74x25,131,0,28,74x25,131,26,29]}
+      panes:
+        - ssh hasselt-test
+        - ssh hasselt-test 'tail -f /usr/local/jbossas7/standalone/log/server.log'
+        - ssh -t hasselt-test 'top'
