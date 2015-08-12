@@ -19,7 +19,7 @@ export SHELL="/bin/zsh"
 export GIT_PS1_SHOWDIRTYSTATE=true
 export GIT_PS1_SHOWCOLORHINTS=true
 
-PROMPT_COMMAND='__git_ps1 "\[\033[1;32m\]\w\n$(~/.rvm/bin/rvm-prompt)" "\[\033[1;32m\]\n\$ \[\033[0m\]" "\\n%s"'
+PROMPT_COMMAND='__git_ps1 "\[\033[1;32m\]\w\n$(rvm-prompt)" "\[\033[1;32m\]\n\$ \[\033[0m\]" "\\n%s"'
 
 #########
 # ALIAS #
@@ -28,5 +28,9 @@ alias ls="ls --color"
 alias ll="ls -al"
 alias tw="t -d ~/.work-todo/config"
 
-setxkbmap -layout be -option ctrl:nocaps
+if [ -n "$SSH_CLIENT" ] || [ -n "SSH_TTY" ]; then
+  echo 'ssh'
+else
+  setxkbmap -layout be -option ctrl:nocaps
+fi
 

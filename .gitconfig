@@ -1,5 +1,5 @@
 [core]
-	excludesfile = /home/thijs/.gitignore_global
+	excludesfile = ~/.gitignore_global
 	editor = vim
 	autocrlf = input
 [help]
