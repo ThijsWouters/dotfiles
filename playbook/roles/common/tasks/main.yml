@@ -1,22 +1,12 @@
 ---
-- name: Install vim
-  apt: name=vim state=present
+- name: Install packages
+  apt: name={{ item }} state=present
   sudo: yes
-- name: Install curl
-  apt: name=curl state=present
-  sudo: yes
-- name: Install zsh
-  apt: name=zsh state=present
-  sudo: yes
-- name: Install keepassx
-  apt: name=keepassx state=present
-  sudo: yes
-- name: Install xclip
-  apt: name=xclip state=present
-  sudo: yes
-- name: Install maven
-  apt: name=maven state=present
-  sudo: yes
-- name: Install tmux
-  apt: name=tmux state=present
-  sudo: yes
+  with_items:
+    - vim
+    - curl
+    - zsh
+    - keepassx
+    - xclip
+    - maven
+    - tmux
