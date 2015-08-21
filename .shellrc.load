@@ -28,9 +28,5 @@ alias ls="ls --color"
 alias ll="ls -al"
 alias tw="t -d ~/.work-todo/config"
 
-if [ -n "$SSH_CLIENT" ] || [ -n "SSH_TTY" ]; then
-  echo 'ssh'
-else
-  setxkbmap -layout be -option ctrl:nocaps
-fi
+setxkbmap -layout be -option ctrl:nocaps
 
