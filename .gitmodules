@@ -93,3 +93,6 @@
 [submodule ".vim/bundle/vim-tsv"]
 	path = .vim/bundle/vim-tsv
 	url = https://github.com/pdurbin/vim-tsv.git
+[submodule ".vim/bundle/vim-elixir"]
+	path = .vim/bundle/vim-elixir
+	url = https://github.com/elixir-lang/vim-elixir
