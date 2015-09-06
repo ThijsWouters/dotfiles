@@ -7,6 +7,9 @@
     rvm1_install_flags: '--auto-dotfiles --user-install --with-gems="bundler tmuxinator guard"'
     rvm1_install_path: '/home/{{ ansible_user_id }}/.rvm'
     rvm1_user: '{{ ansible_user_id }}'
+  - role: zealot128.elixir
+    elixir_version: 1.0.5
+    sudo: yes
   - role: alban.andrieu.dropbox
   - role: ThePixelDeveloper.google-chrome
   - role: smola.java
