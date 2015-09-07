@@ -2,9 +2,10 @@
 - name: Check installation
   stat: path=/opt/idea-IU-141.1532.4
   register: intellij
+- debug: var=intellij
 - name: Download Intellij
   get_url: url=https://download.jetbrains.com/idea/ideaIU-14.1.4.tar.gz dest=/tmp/ideaIU-14.1.4.tar.gz validate_certs=no
-  when: intellij.stat.isdir is defined and p.stat.isdir
+  when: not intellij.stat.exists
 - name: Install Intellij
-  unarchive: dest=/opt creates=/opt/idea src=/tmp/ideaIU-14.1.4.tar.gz
-  when: intellij.stat.isdir is defined and p.stat.isdir
+  unarchive: dest=/opt src=/tmp/ideaIU-14.1.4.tar.gz
+  when: not intellij.stat.exists
