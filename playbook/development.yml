@@ -3,6 +3,7 @@
   connection: local
   roles:
   - role: common
+  - role: hipchat
   - role: rvm_io.rvm1-ruby
     rvm1_install_flags: '--auto-dotfiles --user-install --with-gems="bundler tmuxinator guard"'
     rvm1_install_path: '/home/{{ ansible_user_id }}/.rvm'
