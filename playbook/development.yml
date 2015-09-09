@@ -1,6 +1,10 @@
 ---
 - hosts: localhost
   connection: local
+  tasks:
+    - name: Install postgres dev files
+      apt: name=libpq-dev
+      sudo: yes
   roles:
   - role: common
   - role: hipchat

@@ -2,7 +2,6 @@
 - name: Check installation
   stat: path=/opt/idea-IU-141.1532.4
   register: intellij
-- debug: var=intellij
 - name: Download Intellij
   get_url: url=https://download.jetbrains.com/idea/ideaIU-14.1.4.tar.gz dest=/tmp/ideaIU-14.1.4.tar.gz validate_certs=no
   when: not intellij.stat.exists
