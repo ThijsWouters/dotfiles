@@ -24,6 +24,7 @@
   - role: intellij
     sudo: yes
   - role: azavea.vagrant
+    vagrant_version: "1.7.4"
     sudo: yes
   - role: ANXS.postgresql
     sudo: yes
