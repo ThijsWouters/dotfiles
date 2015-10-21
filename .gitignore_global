@@ -5,3 +5,5 @@
 *.swp
 *.swo
 *.un~
+
+.mix_tasks
