@@ -12,6 +12,7 @@
     rvm1_install_flags: '--auto-dotfiles --user-install --with-gems="bundler tmuxinator guard vimdeck"'
     rvm1_install_path: '/home/{{ ansible_user_id }}/.rvm'
     rvm1_user: '{{ ansible_user_id }}'
+  - role: elixir
   - role: alban.andrieu.dropbox
   - role: ThePixelDeveloper.google-chrome
   - role: smola.java
