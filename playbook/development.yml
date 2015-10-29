@@ -43,6 +43,9 @@
       - name: tradelec_tenant
         pass: tradelec_tenant
         encrypted: no
+      - name: ecto
+        pass: ecto
+        encrypted: no
     postgresql_user_privileges:
       - name: intouchbase
         db: test
@@ -55,4 +58,6 @@
       - name: tradelec_tenant
         db: test
         priv: 'ALL'
+        role_attr_flags: 'SUPERUSER'
+      - name: ecto
         role_attr_flags: 'SUPERUSER'
