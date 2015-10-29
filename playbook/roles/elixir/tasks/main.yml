@@ -7,3 +7,6 @@
 - name: Install elixir
   apt: name=elixir update_cache=yes state=present
   sudo: yes
+- name: Install erlang-dev
+  apt: name=erlang-dev state=present
+  sudo: yes
