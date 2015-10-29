@@ -23,3 +23,6 @@
 - name: Install xclip
   apt: name=xclip state=present
   sudo: yes
+- name: Create user
+  user: name=thijs shell=/bin/zsh generate_ssh_key=yes state=present update_password=on_create
+  sudo: yes
