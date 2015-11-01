@@ -10,3 +10,9 @@
 - name: Install erlang-dev
   apt: name=erlang-dev state=present
   sudo: yes
+- name: Install erlang-base-hipe
+  apt: name=erlang-base-hipe
+  sudo: yes
+- name: Install erlang-eunit
+  apt: name=erlang-eunit
+  sudo: yes
