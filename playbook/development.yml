@@ -23,6 +23,7 @@
     sudo: yes
   - role: azavea.vagrant
     vagrant_version: "1.7.4"
+    virtualbox_version: 5.0
     sudo: yes
   - role: ANXS.postgresql
     sudo: yes
