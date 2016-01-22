@@ -4,6 +4,7 @@
 
 *.swp
 *.swo
+*.swn
 *.un~
 
 .mix_tasks
