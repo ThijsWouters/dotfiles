@@ -67,8 +67,6 @@ nnoremap <C-l> <C-w>l
 xnoremap <leader>p d"0P
 nnoremap <leader>p diw"0P
 
-inoremap jj <esc>
-
 "NERDTree
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
