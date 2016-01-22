@@ -11,3 +11,7 @@
 	tool = vimdiff
 	conflictstyle = diff3
 	prompt = false
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
