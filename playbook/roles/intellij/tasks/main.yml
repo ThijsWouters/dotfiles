@@ -3,8 +3,8 @@
   stat: path=/opt/idea-IU-141.1532.4
   register: intellij
 - name: Download Intellij
-  get_url: url=https://download.jetbrains.com/idea/ideaIU-14.1.4.tar.gz dest=/tmp/ideaIU-14.1.4.tar.gz validate_certs=no
+  get_url: url=https://download.jetbrains.com/idea/ideaIC-2016.1.1.tar.gz dest=/tmp/ideaIC-2016.1.1.tar.gz validate_certs=no
   when: not intellij.stat.exists
 - name: Install Intellij
-  unarchive: dest=/opt src=/tmp/ideaIU-14.1.4.tar.gz
+  unarchive: dest=/opt src=/tmp/ideaIC-2016.1.1.tar.gz
   when: not intellij.stat.exists
