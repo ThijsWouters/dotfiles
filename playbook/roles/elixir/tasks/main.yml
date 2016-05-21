@@ -16,3 +16,6 @@
 - name: Install erlang-eunit
   apt: name=erlang-eunit
   sudo: yes
+- name: Install erlang-parsetools
+  apt: name=erlang-parsetools
+  sudo: yes
