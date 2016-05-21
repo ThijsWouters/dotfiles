@@ -29,5 +29,5 @@ alias ls="ls --color"
 alias ll="ls -al"
 alias tw="t -d ~/.work-todo/config"
 
-setxkbmap -layout be -option ctrl:nocaps
+setxkbmap -option ctrl:nocaps
 
