@@ -15,3 +15,5 @@
 	tool = vimdiff
 [difftool]
 	prompt = false
+[push]
+	default = simple
