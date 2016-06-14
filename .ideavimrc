@@ -11,9 +11,6 @@ inoremap <right> <nop>
 nnoremap j gj
 nnoremap k gk
 
-inoremap jj <esc>
-inoremap jk <esc>
-
 nnoremap <C-l> :action NextTab<CR>
 nnoremap <C-h> :action PreviousTab<CR>
 nnoremap <C-b> :action GotoDeclaration<CR>
