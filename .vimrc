@@ -78,9 +78,8 @@ nnoremap <leader><tab> :Vscratch<CR>
 "Airline
 let g:airline_powerline_fonts = 1
 
-"Rake
-nnoremap <C-t> :wa<CR>:silent Rake test<CR>:redraw!<CR>
-inoremap <C-t> <ESC>:wa<CR>:silent Rake test<CR>:redraw!<CR>i
+"Test.vim
+nnoremap <silent> <leader>t :TestSuite<CR>
 
 "CtrlP
 set wildignore+=*/target/*
