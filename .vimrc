@@ -80,6 +80,7 @@ let g:airline_powerline_fonts = 1
 
 "Test.vim
 nnoremap <silent> <leader>t :TestSuite<CR>
+let test#javascript#mocha#executable = 'npm test'
 
 "CtrlP
 set wildignore+=*/target/*
