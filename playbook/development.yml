@@ -7,24 +7,8 @@
       sudo: yes
   roles:
   - role: common
-  - role: rvm_io.rvm1-ruby
-    rvm1_install_flags: '--auto-dotfiles --user-install --with-gems="bundler tmuxinator guard vimdeck"'
-    rvm1_install_path: '/home/{{ ansible_user_id }}/.rvm'
-    rvm1_user: '{{ ansible_user_id }}'
-  - role: elixir
-  - role: node
   - role: alban.andrieu.dropbox
   - role: ThePixelDeveloper.google-chrome
-  - role: smola.java
-    sudo: yes
-    java_packages:
-      - oracle-java7-installer
-  - role: intellij
-    sudo: yes
-  - role: azavea.vagrant
-    vagrant_version: "1.8.1"
-    virtualbox_version: 5.0
-    sudo: yes
   - role: ANXS.postgresql
     sudo: yes
     postgresql_version: 9.1
@@ -32,17 +16,9 @@
     postgresql_apt_repository: 'deb http://apt.postgresql.org/pub/repos/apt/ utopic-pgdg main'
     postgresql_databases:
       - name: budgetapp
-      - name: trunk
-      - name: syncore2
     postgresql_users:
       - name: budgetapp
         pass: budgetapp
-        encrypted: no
-      - name: syncore2
-        pass: syncore2
-        encrypted: no
-      - name: trunk
-        pass: trunk
         encrypted: no
       - name: ecto
         pass: ecto
@@ -50,14 +26,6 @@
     postgresql_user_privileges:
       - name: budgetapp
         db: budgetapp
-        priv: 'ALL'
-        role_attr_flags: 'SUPERUSER'
-      - name: syncore2
-        db: syncore2
-        priv: 'ALL'
-        role_attr_flags: 'SUPERUSER'
-      - name: trunk
-        db: trunk
         priv: 'ALL'
         role_attr_flags: 'SUPERUSER'
       - name: ecto

@@ -11,9 +11,6 @@
 - name: Install keepassx
   apt: name=keepassx state=present
   sudo: yes
-- name: Install maven
-  apt: name=maven state=present
-  sudo: yes
 - name: Install tmux
   apt: name=tmux state=present
   sudo: yes

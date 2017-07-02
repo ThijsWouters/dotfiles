@@ -1,9 +1,0 @@
----
-- name: Clone nvm repo
-  git: dest=~/.nvm
-       repo=https://github.com/creationix/nvm.git
-       version=v0.31.1
-- name: Install nvm
-  command: ~/.nvm/install.sh
-- name: Install node
-  command: bash -c '. ~/.nvm/nvm.sh' nvm install v6.2.0
