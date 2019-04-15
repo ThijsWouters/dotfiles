@@ -72,9 +72,6 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 nnoremap <C-n> :NERDTreeToggle<CR>
 
-"Scratch
-nnoremap <leader><tab> :Vscratch<CR>
-
 "Airline
 let g:airline_powerline_fonts = 1
 
