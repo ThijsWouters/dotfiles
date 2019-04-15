@@ -42,10 +42,6 @@
 	path = .vim/bundle/vim-slime
 	url = https://github.com/jpalardy/vim-slime
   ignore = untracked
-[submodule ".vim/bundle/vim-snipmate"]
-	path = .vim/bundle/vim-snipmate
-	url = https://github.com/garbas/vim-snipmate
-  ignore = untracked
 [submodule ".vim/bundle/vim-snippets"]
 	path = .vim/bundle/vim-snippets
 	url = https://github.com/honza/vim-snippets
